@@ -6,7 +6,7 @@ enum class TrialScreens {
     HomeScreen,
     DetailsScreen,
     SearchScreen,
-    UpdateScreen,
+    UpdateScreen;
 
     companion object {
         fun fromRoute(route: String?): TrialScreens =
