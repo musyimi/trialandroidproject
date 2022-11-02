@@ -19,6 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.trial.navigation.TrialScreens
 import kotlinx.coroutines.delay
 
 
@@ -35,6 +36,7 @@ fun TrialSplashScreen(navController: NavController) {
                        OvershootInterpolator(8f).getInterpolation(it)
                    }))
         delay(2000L)
+        navController.navigate(TrialScreens.LoginScreen.name)
     }
 
     Surface(modifier = Modifier
